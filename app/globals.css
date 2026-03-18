@@ -3,6 +3,41 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --grid-bg: #bf86e8;
+  --grid-mask-bg: #05162b;
+  --grid-line: #8f8feb;
+  --spotlight-gradient-1: radial-gradient(
+    68.54% 68.72% at 55.02% 31.46%,
+    hsla(266, 88%, 47%, 0.366) 0%,
+    hsla(267, 83%, 14%, 0.234) 50%,
+    transparent 80%
+  );
+
+  --spotlight-gradient-3: radial-gradient(
+    50% 50% at 50% 50%,
+    hsla(267, 91%, 17%, 0.309) 0%,
+    hsla(267, 88%, 16%, 0.682) 80%,
+    transparent 100%
+  );
+
+  --spotlight-gradient-2: radial-gradient(
+    50% 50% at 50% 50%,
+    hsla(267, 88%, 10%, 0.663) 0%,
+    hsla(270, 91%, 18%, 0.429) 60%,
+    transparent 100%
+  );
+}
+
+.dark {
+  --grid-mask-bg: #020d1a;
+  --grid-line: #101028;
+  --background: "#fff";
+}
+
+@theme {
+  --font-teko: var(--font-teko);
+  --font-play: var(--font-play);
+  --font-lato: var(--font-lato);
 }
 
 @theme inline {
@@ -10,11 +45,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #06021b;
     --foreground: #ededed;
   }
 }
@@ -23,4 +58,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
 }

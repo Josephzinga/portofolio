@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "greeting": "Salut, moi c'est Joseph 👋",
+    "role": "Développeur Fullstack",
+    "description": "Je crée des applications web et mobile modernes et interactive  "
+  },
+  "Hero": {
+    "intro": "Salut, moi c'est Joseph 👋",
+    "role": "Développeur Fullstack basé à Bamako.",
+    "title": "Architecte de solutions numériques,\nde l'idée au déploiement global.",
+    "description": "Je conçois des applications web et mobiles robustes dans l'écosystème TypeScript, j'accompagne vos projets de la base de données jusqu'à l'interface finale.",
+    "cta_projects": "Découvrir mes projets",
+    "cta_contact": "Me contacter"
+  }
+}

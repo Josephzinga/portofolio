@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm Joseph 👋",
+    "role": "Self-taught Frontend Developer",
+    "description": "I build moderne, interactive web and mobile applications."
+  },
+  "Hero": {
+    "intro": "Hi, I'm Joseph 👋",
+    "role": "Fullstack Developer based in Bamako.",
+    "title": "Architecting digital solutions,\nfrom concept to global deployment.",
+    "description": "I build robust web and mobile applications, Specialized in the TypeScript ecosystem, I handle your projects from database design to the final user interface.",
+    "cta_projects": "View my projects",
+    "cta_contact": "Contact me"
+  }
+}
